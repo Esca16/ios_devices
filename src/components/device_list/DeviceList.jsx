@@ -1,12 +1,12 @@
 import React from 'react'
 import { useContext } from 'react'
-import { DeviceContext } from '../../context/DeviceProvider'
 import DeviceItem from './DeviceItem';
+import { DeviceContext } from '../../context/DeviceProvider'
 
 const DeviceList = () => {
-    const { devices, setDevices } = useContext(DeviceContext);
+    const { devices } = useContext(DeviceContext)
     return (
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap w-[80%] mx-auto'>
             {devices.map((data) => {
                 return (
                     <DeviceItem
