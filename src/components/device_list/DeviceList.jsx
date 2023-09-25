@@ -6,7 +6,7 @@ import { DeviceContext } from '../../context/DeviceProvider'
 const DeviceList = () => {
     const { devices } = useContext(DeviceContext)
     return (
-        <div className='flex flex-wrap w-[80%] mx-auto'>
+        <div className='flex flex-wrap gap-x-[2%] gap-y-6 mt-4'>
             {devices.map((data) => {
                 return (
                     <DeviceItem
